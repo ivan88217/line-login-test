@@ -1,0 +1,16 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# API 代理後端規則
+
+本專案於 Next.js 的 `/api` 路徑採用 [ElysiaJS](mdc:https:/elysiajs.com) 作為代理後端。
+遵循 [Elysia Nextjs](mdc:https://elysiajs.com/integrations/nextjs.html)
+
+- 所有經由 `/api` 路徑的 API 請求，將由 ElysiaJS 處理與轉發 `app/api/[[...slugs]]/route.ts`。
+- 請於 ElysiaJS 內實作 API 業務邏輯，並確保與 Next.js 前端協作順暢。
+- 若需擴充 API，請優先於 ElysiaJS 服務內進行。
+- 相關設定與實作請參考 `app/api/[[...slugs]]` 目錄及 ElysiaJS 相關檔案。
+
+如需詳細設定與範例，請參考官方文件或專案內現有實作。

@@ -1,0 +1,15 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# eden-api-client
+
+本專案規定：
+
+- 前端（Next.js）如需串接後端 API（/api 路徑），一律必須使用 [@elysiajs/eden](https://elysiajs.com/eden/treaty/overview.html) 作為 API client。
+- 禁止直接使用 fetch、axios 等其他 HTTP client 直接呼叫 /api。
+- eden client 的初始化與型別請參考官方文件與專案內現有實作。
+- 相關設定與範例請參考 `app/api/[[...slugs]]/route.ts` 及專案內前端呼叫 API 的程式碼。
+
+如需詳細設定與範例，請參考官方文件或專案內現有實作。

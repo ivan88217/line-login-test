@@ -1,0 +1,16 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# 專案套件管理規則
+
+本專案僅允許使用 [Bun](mdc:https:/bun.sh) 作為唯一的套件管理器（PM）。
+
+- 禁止使用 npm、yarn、pnpm 等其他套件管理器。
+- 所有依賴安裝、執行腳本、鎖定檔案（如 `bun.lock`）皆應以 Bun 為準。
+- 若需安裝新套件，請使用 `bun add` 指令。
+- 若需執行腳本，請使用 `bun run`。
+- 請勿提交 `package-lock.json`、`yarn.lock`、`pnpm-lock.yaml` 等非 Bun 產生的鎖定檔案。
+
+如需參考，請見 [bun.lock](mdc:bun.lock) 及 [package.json](mdc:package.json)。

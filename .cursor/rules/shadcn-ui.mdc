@@ -1,0 +1,15 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# 前端樣板框架規則
+
+本專案採用 [ShadCN UI](mdc:https:/ui.shadcn.com) 作為主要的前端樣板框架。
+
+- 所有 UI 元件應優先使用 ShadCN UI 提供的元件進行開發與擴充。
+- 若需自訂樣式或擴充元件，請以 ShadCN UI 為基礎進行。
+- 請勿混用其他 UI 框架（如 MUI、Antd、Chakra UI 等），除非有特殊需求並經過審核。
+- 相關元件、樣式、設定檔案請參考 `app/` 目錄下相關檔案。
+
+如需詳細使用方式，請參考官方文件或專案內現有元件實作。
