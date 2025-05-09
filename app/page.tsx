@@ -11,6 +11,7 @@ interface UserProfile {
   displayName: string;
   pictureUrl?: string;
   statusMessage?: string;
+  email?: string;
 }
 
 export default function Home() {
@@ -71,6 +72,9 @@ export default function Home() {
                 <h2 className="text-xl font-semibold">
                   {userProfile.displayName}
                 </h2>
+                {userProfile.email && (
+                  <p className="text-gray-600">{userProfile.email}</p>
+                )}
                 {userProfile.statusMessage && (
                   <p className="text-gray-600">{userProfile.statusMessage}</p>
                 )}
